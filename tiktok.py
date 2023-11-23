@@ -172,7 +172,7 @@ def follow_tiktok():
                     
                     driver.find_element(By.CSS_SELECTOR, "a[class^='cursor earn_pages_button profile_view_img']").click()
                     my_list_like.append(onclick_value)
-                    with open('unfollowing.txt', 'a', encoding='utf-8') as result:
+                    with open('unfollowing_tiktok.txt', 'a', encoding='utf-8') as result:
                         result.write("\n")
                         result.write(onclick_value)
                     driver.switch_to.window(driver.window_handles[1])
@@ -213,7 +213,7 @@ def follow_tiktok():
                                     totel_mail_new = int(700)+int(totel_mail) 
                                     print(totel_mail_new)
                                     # Set your GitHub access token
-                                    access_token = "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"
+                                    access_token = "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"
 
                                     # Set the repository name
                                     repository_name = "you{}".format(totel_mail_new)
